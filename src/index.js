@@ -1,5 +1,10 @@
-import mongoose from "mongoose";
-import { DB_NAME } from "./constants";
+import dotenv from "dotenv";
+import connect_db from "./db";
+
+dotenv.config({
+  path: "./.env",
+});
+connect_db();
 
 /* First approach to connect to database
 
